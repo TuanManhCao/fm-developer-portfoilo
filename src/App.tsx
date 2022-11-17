@@ -13,13 +13,16 @@ function App() {
       <main className="bg-black p-6 text-white">
         {/* Header */}
         <AppHeader />
+
         {/* Hero image */}
         <HeroSection />
+        <div className="h-[2px] w-full bg-tc-grey"> </div>
         {/* Skills listing */}
         <SkillSection />
+
         {/* Projects listing */}
 
-        {/* Header */}
+        {/* Footer */}
       </main>
     </>
   );

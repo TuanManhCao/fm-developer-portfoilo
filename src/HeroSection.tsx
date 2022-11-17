@@ -7,7 +7,7 @@ import profileImageSm from "./assets/images/image-profile-mobile.webp";
 
 export default function HeroSection() {
   return (
-    <div>
+    <div className="pb-20">
       <div>
         <img
           src={profileImageSm}
@@ -25,7 +25,7 @@ export default function HeroSection() {
           className="hidden lg:block"
         />
       </div>
-      <div className="flex flex-col items-center gap-4 text-white">
+      <div className="flex flex-col items-center gap-4  text-white">
         <h1 className="text-center text-4xl">
           Nice to meet you! I’m{" "}
           <span className="underline decoration-tc-green underline-offset-8">
