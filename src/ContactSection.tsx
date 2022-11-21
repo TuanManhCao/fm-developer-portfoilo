@@ -2,10 +2,10 @@ import React from "react";
 
 export default function ContactSection() {
   return (
-    <div>
-      <div>
-        <h2>Contact</h2>
-        <p>
+    <div className="bg-tc-dark-grey">
+      <div className="flex flex-col gap-4" >
+        <h2 className="text-4xl text-center mt-16">Contact</h2>
+        <p className="text-base text-center mb-8">
           I would love to hear about your project and how I could help. Please
           fill in the form, and I’ll get back to you as soon as possible.
         </p>
@@ -16,7 +16,7 @@ export default function ContactSection() {
             <input
               type="text"
               placeholder="NAME"
-              className="h-12 w-full  border-b-2 bg-transparent pl-6 placeholder-tc-grey"
+              className="h-12 w-full  border-b-2 bg-transparent pl-6 placeholder-tc-grey ring-blue-200"
             />
             <input
               type="text"

@@ -12,7 +12,7 @@ export default function HeroSection() {
         <img
           src={profileImageSm}
           alt="Adam keyes profile image black and white"
-          className="mx-auto block w-44 sm:hidden"
+          className="mx-auto block w-44 sm:hidden -mt-32 object-bottom object-cover "
         />
         <img
           src={profileImageMd}

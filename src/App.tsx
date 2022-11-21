@@ -13,10 +13,11 @@ function App() {
 
   return (
     <>
-      <main className="bg-black p-6 text-white">
+      <header className="bg-black p-6 text-white relative z-10">
         {/* Header */}
         <AppHeader />
-
+      </header>
+      <main className="bg-black p-6 text-white">
         {/* Hero image */}
         <HeroSection />
         <div className="h-[2px] w-full bg-tc-grey"> </div>
@@ -26,10 +27,12 @@ function App() {
         {/* Projects listing */}
         <ProjectSection />
         {/* Footer */}
+      </main>
+      <footer className="bg-tc-dark-grey p-6 text-white">
         <ContactSection />
         <div className="#divider mt-10 mb-10 h-[2px] w-full bg-tc-grey"> </div>
         <AppHeader />
-      </main>
+      </footer>
     </>
   );
 }
