@@ -16,7 +16,7 @@ import projectImage6Small from "./assets/images/thumbnail-project-6-small.webp";
 export function ProjectSection() {
   return (
     <>
-      <div className="mt-20 flex flex-col gap-4">
+      <div className="mx-auto mt-20 flex flex-col gap-4 md:max-w-5xl">
         <div className="flex flex-row justify-between">
           <span className="inline-block items-center text-3xl">Projects</span>
           <a

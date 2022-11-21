@@ -10,12 +10,12 @@ const skills = [
 
 export default function SkillSection() {
   return (
-    <div className="grid grid-cols-1 justify-center gap-6 pt-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="mx-auto grid grid-cols-1 justify-center gap-6 pt-10 md:max-w-5xl md:grid-cols-2 xl:grid-cols-3">
       {skills.map((aSkill) => (
         <>
-          <div key={aSkill.name} className="">
-            <h2 className="w-full text-center text-4xl">{aSkill.name}</h2>
-            <span className="inline-block w-full pt-2 text-center text-tc-grey">
+          <div key={aSkill.name} className="text-center md:text-left">
+            <h2 className="w-full text-4xl">{aSkill.name}</h2>
+            <span className="inline-block w-full pt-2  text-tc-grey">
               {aSkill.exp}
             </span>
           </div>
