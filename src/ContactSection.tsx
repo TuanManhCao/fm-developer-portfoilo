@@ -1,8 +1,8 @@
 import React from "react";
-
+import ringImage from "./assets/images/pattern-rings.svg";
 export default function ContactSection() {
   return (
-    <div className="bg-tc-dark-grey">
+    <div className="relative bg-tc-dark-grey">
       <div className="flex flex-col gap-4">
         <h2 className="mt-16 text-center text-4xl">Contact</h2>
         <p className="mb-8 text-center text-base">
@@ -10,7 +10,8 @@ export default function ContactSection() {
           fill in the form, and I’ll get back to you as soon as possible.
         </p>
       </div>
-      <div>
+      <img src={ringImage} alt="" className="absolute bottom-1 -left-48 z-0 opacity-25" />
+      <div className="relative z-10">
         <form action="">
           <div className="flex flex-col items-end gap-8">
             <input

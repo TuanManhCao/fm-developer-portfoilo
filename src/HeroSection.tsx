@@ -5,14 +5,20 @@ import profileImageMd from "./assets/images/image-profile-tablet.webp";
 
 import profileImageSm from "./assets/images/image-profile-mobile.webp";
 
+import ringImage from './assets/images/pattern-rings.svg'
+import circleImage from "./assets/images/pattern-circle.svg";
+
+// "src/assets/images/pattern-circle.svg";
 export default function HeroSection() {
   return (
-    <div className="pb-20">
-      <div>
+    <div className="relative pb-20">
+      <img src={ringImage} alt="" className="absolute top-40 -left-40 z-10 opacity-50" />
+      <img src={circleImage} alt="" className="absolute top-64 -right-24 z-20" />
+      <div className="relative z-20 ">
         <img
           src={profileImageSm}
           alt="Adam keyes profile image black and white"
-          className="mx-auto block w-44 sm:hidden -mt-32 object-bottom object-cover "
+          className="mx-auto -mt-40 block w-44 object-cover object-bottom sm:hidden "
         />
         <img
           src={profileImageMd}
