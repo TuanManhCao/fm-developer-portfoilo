@@ -14,7 +14,7 @@ export default function SkillSection() {
       {skills.map((aSkill) => (
         <>
           <div key={aSkill.name} className="text-center md:text-left">
-            <h2 className="w-full text-4xl">{aSkill.name}</h2>
+            <h2 className="w-full text-3xl">{aSkill.name}</h2>
             <span className="inline-block w-full pt-2  text-tc-grey">
               {aSkill.exp}
             </span>

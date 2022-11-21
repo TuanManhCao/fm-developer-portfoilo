@@ -18,7 +18,7 @@ export function ProjectSection() {
     <>
       <div className="mx-auto mt-20 flex flex-col gap-4 md:max-w-5xl">
         <div className="flex flex-row justify-between">
-          <span className="inline-block items-center text-3xl">Projects</span>
+          <span className="inline-block items-center text-3xl md:text-5xl">Projects</span>
           <a
             href="#contact"
             className="text-center text-xl font-bold underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
@@ -26,7 +26,7 @@ export function ProjectSection() {
             Contact me{" "}
           </a>
         </div>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 ">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 pb-10 md:pb-16">
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
@@ -41,7 +41,7 @@ export function ProjectSection() {
 
 export function ProjectCard() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 pb-8">
       <img src={projectImage1Small} alt="" className="w-full" />
       <h3 className="text-2xl">Design Portfolio</h3>
       <div className="flex flex-row flex-wrap justify-start gap-4">
@@ -49,7 +49,7 @@ export function ProjectCard() {
         <span className="uppercase text-tc-grey ">HTML</span>
         <span className="uppercase text-tc-grey ">HTML</span>
       </div>
-      <div className="flex flex-row gap-6">
+      <div className="flex flex-row gap-6 pt-4">
         <a
           href="#contact"
           className="text-center text-xl font-bold uppercase underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
