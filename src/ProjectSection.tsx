@@ -17,7 +17,7 @@ export function ProjectSection() {
   return (
     <>
       <div className="mx-auto mt-20 flex flex-col gap-4 md:max-w-5xl xl:max-w-6xl">
-        <div className="flex flex-row justify-between">
+        <div className="flex flex-row justify-between items-center pb-4 xl:pb-20 md:pb-6">
           <span className="inline-block items-center text-3xl md:text-5xl xl:text-8xl">
             Projects
           </span>
