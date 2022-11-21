@@ -11,7 +11,7 @@ import circleImage from "./assets/images/pattern-circle.svg";
 // "src/assets/images/pattern-circle.svg";
 export default function HeroSection() {
   return (
-    <div className="relative mx-auto pb-20 md:flex md:max-w-5xl md:flex-row items-center">
+    <div className="relative mx-auto pb-20 md:flex md:max-w-5xl md:flex-row items-center xl:max-w-6xl">
       <img
         src={ringImage}
         alt=""
@@ -40,7 +40,7 @@ export default function HeroSection() {
         />
       </div>
       <div className="flex flex-col items-center gap-4  text-center text-white md:order-1 md:items-start md:text-left">
-        <h1 className="text-4xl md:text-[72px] md:leading-none md:tracking-tight">
+        <h1 className="text-4xl md:text-[72px] md:leading-none md:tracking-tight xl:text-8xl">
           Nice to meet you! I’m{" "}
           <span className="underline decoration-tc-green underline-offset-8">
             Adam Keyes.

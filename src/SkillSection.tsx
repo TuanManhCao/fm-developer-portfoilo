@@ -10,7 +10,7 @@ const skills = [
 
 export default function SkillSection() {
   return (
-    <div className="mx-auto grid grid-cols-1 justify-center gap-6 pt-10 md:max-w-5xl md:grid-cols-2 xl:grid-cols-3">
+    <div className="mx-auto grid grid-cols-1 justify-center gap-6 pt-10 md:max-w-5xl md:grid-cols-2 xl:max-w-6xl xl:grid-cols-3">
       {skills.map((aSkill) => (
         <>
           <div key={aSkill.name} className="text-center md:text-left">

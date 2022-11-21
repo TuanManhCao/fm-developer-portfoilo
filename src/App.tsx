@@ -20,7 +20,7 @@ function App() {
       <main className="bg-black p-6 text-white md:p-12">
         {/* Hero image */}
         <HeroSection />
-        <div className="h-[2px] w-full bg-tc-grey"> </div>
+        <div className="h-[2px] w-full bg-tc-grey xl:hidden"> </div>
         {/* Skills listing */}
         <SkillSection />
         <div className="mt-10 h-[2px] w-full bg-tc-grey md:hidden"> </div>

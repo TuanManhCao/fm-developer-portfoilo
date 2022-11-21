@@ -3,7 +3,7 @@ import React from "react";
 export default function AppHeader() {
   return (
     <>
-      <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between">
+      <div className="flex flex-col items-center gap-8 md:flex-row md:justify-between md:max-w-5xl xl:max-w-6xl md:mx-auto">
         <span className="text-2xl font-bold">adamkeyes</span>
         <div className="flex flex-row gap-8">
           {/* Github */}

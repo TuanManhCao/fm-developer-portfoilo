@@ -2,10 +2,12 @@ import React from "react";
 import ringImage from "./assets/images/pattern-rings.svg";
 export default function ContactSection() {
   return (
-    <div className="relative mx-auto bg-tc-dark-grey md:max-w-5xl">
-      <div className="flex flex-col gap-4 max-w-lg mx-auto">
-        <h2 className="mt-16 text-center text-4xl">Contact</h2>
-        <p className="mb-8 text-center text-base md:text-lg md:leading-7 md:px-4">
+    <div className="relative mx-auto bg-tc-dark-grey md:max-w-5xl xl:flex xl:max-w-6xl xl:flex-row xl:justify-between ">
+      <div className="mx-auto flex max-w-lg flex-col gap-4  xl:mx-0">
+        <h2 className="mt-16 text-center text-4xl xl:mt-0 xl:text-left xl:text-8xl">
+          Contact
+        </h2>
+        <p className="mb-8 text-center text-base md:px-4 md:text-lg md:leading-7 xl:px-0 xl:text-left">
           I would love to hear about your project and how I could help. Please
           fill in the form, and I’ll get back to you as soon as possible.
         </p>
@@ -17,7 +19,7 @@ export default function ContactSection() {
       />
       <div className="relative z-10">
         <form action="">
-          <div className="flex flex-col items-end gap-8 max-w-lg mx-auto">
+          <div className="mx-auto flex max-w-lg flex-col items-end gap-8 xl:w-[445px]">
             <input
               type="text"
               placeholder="NAME"

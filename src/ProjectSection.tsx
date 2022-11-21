@@ -16,9 +16,11 @@ import projectImage6Small from "./assets/images/thumbnail-project-6-small.webp";
 export function ProjectSection() {
   return (
     <>
-      <div className="mx-auto mt-20 flex flex-col gap-4 md:max-w-5xl">
+      <div className="mx-auto mt-20 flex flex-col gap-4 md:max-w-5xl xl:max-w-6xl">
         <div className="flex flex-row justify-between">
-          <span className="inline-block items-center text-3xl md:text-5xl">Projects</span>
+          <span className="inline-block items-center text-3xl md:text-5xl xl:text-8xl">
+            Projects
+          </span>
           <a
             href="#contact"
             className="text-center text-xl font-bold underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
@@ -26,7 +28,7 @@ export function ProjectSection() {
             Contact me{" "}
           </a>
         </div>
-        <div className="grid grid-cols-1 gap-x-8 gap-y-16 md:grid-cols-2 pb-10 md:pb-16">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-16 pb-10 md:grid-cols-2 md:pb-16">
           <ProjectCard />
           <ProjectCard />
           <ProjectCard />
@@ -42,14 +44,32 @@ export function ProjectSection() {
 export function ProjectCard() {
   return (
     <div className="flex flex-col gap-4 pb-8">
-      <img src={projectImage1Small} alt="" className="w-full" />
+      <div className="xl:relative">
+        <img src={projectImage1Small} alt="" className="top-0 left-0 w-full" />
+        <div className="xl:absolute xl:top-0 xl:left-0 xl:h-full xl:w-full">
+          <div className="flex h-full w-full flex-col items-center justify-center gap-8 bg-black/75 opacity-0 hover:opacity-100 hover:transition-all">
+            <a
+              href="#contact"
+              className="text-center text-xl font-bold uppercase underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
+            >
+              View Project{" "}
+            </a>
+            <a
+              href="#contact"
+              className="text-center text-xl font-bold uppercase underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
+            >
+              View Code{" "}
+            </a>
+          </div>
+        </div>
+      </div>
       <h3 className="text-2xl">Design Portfolio</h3>
       <div className="flex flex-row flex-wrap justify-start gap-4">
         <span className="uppercase text-tc-grey ">HTML</span>
         <span className="uppercase text-tc-grey ">HTML</span>
         <span className="uppercase text-tc-grey ">HTML</span>
       </div>
-      <div className="flex flex-row gap-6 pt-4">
+      <div className="flex flex-row gap-6 pt-4 xl:hidden">
         <a
           href="#contact"
           className="text-center text-xl font-bold uppercase underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
