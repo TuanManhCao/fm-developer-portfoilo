@@ -92,15 +92,15 @@ export function ProjectCard({ imageSrcSm, imageSrcLg, title, skills } : Project)
       <div className="xl:relative">
         <img src={imageSrcSm} alt="" className="top-0 left-0 w-full" />
         <div className="xl:absolute xl:top-0 xl:left-0 xl:h-full xl:w-full">
-          <div className="flex h-full w-full flex-col items-center justify-center gap-8 bg-black/75 opacity-0 hover:opacity-100 hover:transition-all">
+          <div className="h-full w-full flex-col items-center justify-center gap-8 bg-black/75 opacity-0 hover:opacity-100 hover:transition-all hidden xl:flex">
             <a
-              href="#contact"
+              href="#"
               className="text-center text-xl font-bold uppercase underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
             >
               View Project{" "}
             </a>
             <a
-              href="#contact"
+              href="#"
               className="text-center text-xl font-bold uppercase underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
             >
               View Code{" "}
@@ -121,13 +121,13 @@ export function ProjectCard({ imageSrcSm, imageSrcLg, title, skills } : Project)
       </div>
       <div className="flex flex-row gap-6 pt-4 xl:hidden">
         <a
-          href="#contact"
+          href="#"
           className="text-center text-xl font-bold uppercase underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
         >
           View Project{" "}
         </a>
         <a
-          href="#contact"
+          href="#"
           className="text-center text-xl font-bold uppercase underline decoration-tc-green decoration-2 underline-offset-8 hover:text-tc-green"
         >
           View Code{" "}

@@ -16,8 +16,7 @@ export default function ContactSection() {
   const emailRef = useRef<HTMLInputElement>(null);
   const messageRef = useRef<HTMLInputElement>(null);
 
-  function validateName()
-  {
+  function validateName() {
     if (nameRef.current == null || nameRef.current.value.length == 0) {
       setNameError("Name cannot be blank");
     } else {
@@ -44,15 +43,15 @@ export default function ContactSection() {
 
     console.log("Name: " + nameRef.current?.value);
 
-    validateName()
+    validateName();
 
-    validateEmail()  
+    validateEmail();
 
-    validateMessage()
+    validateMessage();
   }
 
   return (
-    <div className="relative mx-auto bg-tc-dark-grey md:max-w-5xl xl:flex xl:max-w-6xl xl:flex-row xl:justify-between ">
+    <div id="contact" className="relative mx-auto bg-tc-dark-grey md:max-w-5xl xl:flex xl:max-w-6xl xl:flex-row xl:justify-between ">
       <div className="mx-auto flex max-w-lg flex-col gap-4  xl:mx-0">
         <h2 className="mt-16 text-center text-4xl xl:mt-0 xl:text-left xl:text-8xl">
           Contact
@@ -125,7 +124,7 @@ export function InputWithError({
   placeholder,
   errorMessage,
   innerRef,
-  onChangeFunc
+  onChangeFunc,
 }: InputProp) {
   return (
     <div className="w-full ">
@@ -151,7 +150,7 @@ export function TextAreaWithError({
   placeholder,
   errorMessage,
   innerRef,
-  onChangeFunc
+  onChangeFunc,
 }: Partial<InputProp>) {
   return (
     <div className="w-full ">
@@ -168,7 +167,7 @@ export function TextAreaWithError({
         onChange={onChangeFunc}
       />
       {errorMessage!.length > 0 && (
-        <p className="w-full truncate pt-1 text-right text-xs text-[#FF6F5B]">
+        <p className="w-full truncate pt-1 text-right text-xs text-[#FF6`F5B]">
           {errorMessage}
         </p>
       )}
